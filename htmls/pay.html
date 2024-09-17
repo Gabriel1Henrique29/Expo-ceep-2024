@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>                   
+    <meta charset="UTF-8" />
+    <title>Pagamentos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+    <a class="Voltar" href="../home.html"> ⬅️ Voltar</a>
+    <body>
+        <div class="container">
+            <h1>Página de Pagamento</h1>
+            <form action="/processar-pagamento" method="POST">
+                <label class="label-pay" for="nome">Nome Completo</label>
+                <input class="input-pay" type="text" id="nome" name="nome" required>
+                <label class="label-pay" for="email">Email</label>
+                <input class="input-pay" type="email" id="email" name="email" required>
+                <label class="label-pay" for="endereco">Endereço</label>
+                <input class="input-pay" type="text" id="endereco" name="endereco" required>
+                <label class="label-pay" for="cidade">Cidade</label>
+                <input class="input-pay" type="text" id="cidade" name="cidade" required>
+                <label class="label-pay" for="estado">Estado</label>
+                <input class="input-pay" type="text" id="estado" name="estado" required>
+                <label class="label-pay" for="cep">CEP</label>
+                <input class="input-pay" type="text" id="cep" name="cep" required>
+                <label class="label-pay" for="cartao">Número do Cartão</label>
+                <input class="input-pay" type="text" id="cartao" name="cartao" required>
+                <label class="label-pay" for="validade">Data de Validade</label>
+                <input class="input-pay" type="text" id="validade" name="validade" placeholder="MM/AA" required>
+                <label class="label-pay" for="cvv">CVV</label>
+                <input class="input-pay" type="text" id="cvv" name="cvv" required>
+                <label class="label-pay" for="parcelas">Parcelas</label>
+                <select class="select-pay" name="parcelas">
+                    <option value="1">1x (sem juros)</option>
+                    <option value="2">2x (sem juros)</option>
+                    <option value="3">3x (sem juros)</option>
+                </select>
+                <div class="payment-methods">
+                    <img src="cartao-visa.png" alt="Visa">
+                    <img src="cartao-mastercard.png" alt="Mastercard">
+                    <img src="cartao-amex.png" alt="Amex">
+                    <img src="../img/pix.jpg" alt="pix">
+                </div>
+                <button type="submit">Pagar Agora</button>
+            </form>
+        </div>
+    </body>
+    </html>
+    
